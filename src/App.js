@@ -1,22 +1,21 @@
-import React from "react";
+import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Home from "./pages/Home";
+import Recipes from "./pages/Recipes";
+import SingleRecipe from "./pages/SingleRecipe";
+import Default from "./pages/Default";
 
-function App() {
-  return (
-    <div>
-      <h1>VipRecipes</h1>
-      <p>Celebrating with this iframe tag</p>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/xy96ui8kRYg"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Home />
+        <Recipes />
+        <SingleRecipe />
+        <Default />
+      </div>
+    );
+  }
 }
-
 export default App;
