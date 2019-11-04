@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class Home extends Component {
   render() {
     return (
-      <Header title="free for ever">
+      <Header title="free recipes">
         <Link
           to="/recipes"
           className="text-uppercase btn btn-lg btn-secondary mt-3"
